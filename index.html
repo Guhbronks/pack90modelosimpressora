@@ -1238,6 +1238,91 @@
       color: var(--text-main);
     }
 
+    /* MODAL MOBILE RESPONSIVENESS */
+    @media (max-width: 640px) {
+      .modal-backdrop {
+        padding: 0.6rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-card {
+        padding: 1.25rem 0.85rem 1rem;
+        border-radius: 16px;
+        max-height: 92vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .modal-close-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 30px;
+        height: 30px;
+        font-size: 1.1rem;
+      }
+
+      .modal-tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.6rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .modal-title {
+        font-size: 1.15rem;
+        line-height: 1.2;
+        margin-bottom: 0.35rem;
+      }
+
+      .modal-sub {
+        font-size: 0.8rem;
+        line-height: 1.35;
+        margin-bottom: 0.75rem;
+      }
+
+      .modal-box-offer {
+        padding: 0.75rem;
+        margin-bottom: 0.85rem;
+        border-radius: 10px;
+      }
+
+      .modal-price-display {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .modal-price-old {
+        font-size: 0.78rem;
+      }
+
+      .modal-price-now {
+        font-size: 1.45rem;
+        margin: 0.1rem 0;
+      }
+
+      .modal-price-period {
+        font-size: 0.7rem;
+      }
+
+      .modal-features-list {
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        line-height: 1.35;
+      }
+
+      .modal-btn-upgrade {
+        font-size: 0.88rem;
+        padding: 0.75rem 0.75rem;
+        min-height: 48px;
+        line-height: 1.25;
+      }
+
+      .modal-btn-basic {
+        font-size: 0.78rem;
+        line-height: 1.3;
+      }
+    }
+
     /* FADE-UP INTERSECTION ANIMATION (INSTANT & SMOOTH) */
     .fade-up-element {
       opacity: 0;
