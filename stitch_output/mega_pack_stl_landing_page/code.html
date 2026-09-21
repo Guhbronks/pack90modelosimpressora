@@ -1,0 +1,2237 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Pack STL — +90.000 Arquivos STL Prontos para Impressão 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="assets/fonts.css" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1059217000255158');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+  <style>
+    /* RESET & VARS */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-dark: #0D0D0F;
+      --bg-section: #16161A;
+      --text-main: #F2F2F2;
+      --text-muted: #A1A1AA;
+      --accent-orange: #FF6B1A;
+      --accent-orange-hover: #e55a0f;
+      --accent-green: #22C55E;
+      --accent-red: #EF4444;
+      --border-card: rgba(255, 255, 255, 0.08);
+      --radius-card: 16px;
+      --radius-btn: 10px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-size: 17px;
+      line-height: 1.6;
+      font-weight: 400;
+      overflow-x: hidden;
+      padding-bottom: 70px; /* Space for mobile sticky bottom bar */
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      color: var(--text-main);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* CONTAINER & SECTIONS */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    section {
+      padding: 4.5rem 0;
+    }
+
+    section:nth-of-type(even) {
+      background-color: var(--bg-section);
+    }
+
+    section:nth-of-type(odd) {
+      background-color: var(--bg-dark);
+    }
+
+    /* TOP NOTICE BAR */
+    .top-bar {
+      background-color: #DC2626;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    /* BUTTONS & CTA */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-orange);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      min-height: 56px;
+      padding: 1rem 2rem;
+      border-radius: var(--radius-btn);
+      border: none;
+      cursor: pointer;
+      font-size: 1.05rem;
+      text-align: center;
+      transition: background-color 0.2s ease, transform 0.15s ease;
+      width: 100%;
+      box-shadow: 0 4px 18px rgba(255, 107, 26, 0.28);
+    }
+
+    @media (min-width: 640px) {
+      .btn {
+        width: auto;
+        min-width: 320px;
+      }
+    }
+
+    .btn:hover {
+      background-color: var(--accent-orange-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .micro-copy {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+      margin-bottom: 0;
+    }
+
+    /* CARDS */
+    .card {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    /* ICONS (MONOCHROME INLINE) */
+    .icon {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+
+    /* HERO */
+    .hero-section {
+      padding: 3.5rem 0 4.5rem;
+      text-align: center;
+    }
+
+    .pre-headline {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-orange);
+      background: rgba(255, 107, 26, 0.1);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(255, 107, 26, 0.25);
+    }
+
+    .hero-title {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      max-width: 580px;
+      margin: 0 auto 2rem;
+      text-align: left;
+    }
+
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .hero-bullets .icon {
+      color: var(--accent-orange);
+    }
+
+    .social-proof-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-card);
+      border-radius: 999px;
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    /* HERO SECTION & BACKGROUND MASK */
+    .hero-section {
+      position: relative;
+      background-color: #050507;
+      padding: 4.5rem 0 3.5rem;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero-bg-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      opacity: 0.32;
+      filter: contrast(1.25) brightness(0.6);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 30%, rgba(5, 5, 7, 0.45) 0%, #050507 85%),
+                  linear-gradient(to bottom, rgba(5, 5, 7, 0.75) 0%, rgba(5, 5, 7, 0.95) 75%, #050507 100%),
+                  linear-gradient(to top, rgba(5, 5, 7, 0.8) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+    }
+
+    /* BRAND LOGO HEADER */
+    .brand-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .brand-logo {
+      height: 95px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 20px rgba(255, 107, 26, 0.5));
+      transition: transform 0.3s ease;
+    }
+
+    .brand-logo:hover {
+      transform: scale(1.04);
+    }
+
+    /* HERO MEDIA (GIF) */
+    .hero-media-wrap {
+      width: 100%;
+      max-width: 820px;
+      margin: 1.75rem auto 2.25rem;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      border: 1px solid rgba(255, 107, 26, 0.35);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 107, 26, 0.18);
+      background: #16161A;
+    }
+
+    .hero-gif-media {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* DEPOIMENTOS GALLERY (9:16 HORIZONTAL SCROLL) */
+    .depoimentos-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1.25rem;
+      padding: 0.5rem 0.25rem 1.5rem 0.25rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-orange) rgba(255, 255, 255, 0.05);
+    }
+
+    .depoimentos-gallery::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .depoimentos-gallery::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 999px;
+    }
+
+    .depoimentos-gallery::-webkit-scrollbar-thumb {
+      background-color: var(--accent-orange);
+      border-radius: 999px;
+    }
+
+    .depoimento-img-card {
+      flex: 0 0 auto;
+      width: 270px;
+      aspect-ratio: 9 / 16;
+      scroll-snap-align: start;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      border: 1px solid var(--border-card);
+      background: #18181D;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    @media (max-width: 640px) {
+      .depoimento-img-card {
+        width: 230px;
+      }
+    }
+
+    .depoimento-img-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 107, 26, 0.6);
+      box-shadow: 0 12px 30px rgba(255, 107, 26, 0.25);
+    }
+
+    .depoimento-img-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .closing-phrase {
+      text-align: center;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      font-weight: 600;
+      margin-top: 2.25rem;
+    }
+
+    /* BÔNUS IMAGES */
+    .bonus-card-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border-card);
+      background: #18181D;
+    }
+
+    .bonus-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .bonus-card:hover .bonus-card-img {
+      transform: scale(1.04);
+    }
+
+    /* DOR & SOLUÇÃO */
+    .dor-corpo, .solucao-corpo {
+      max-width: 780px;
+      margin: 0 auto 2.25rem;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    .dor-grid, .beneficios-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .dor-grid, .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .dor-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .dor-card .icon {
+      color: var(--accent-red);
+      margin-top: 0.15rem;
+    }
+
+    .dor-card p {
+      margin: 0;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .beneficio-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .beneficio-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .beneficio-header .icon {
+      color: var(--accent-orange);
+    }
+
+    .beneficio-header h3 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .beneficio-card p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    /* CATEGORIAS */
+    .categorias-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .categorias-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .categorias-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .categoria-card {
+      position: relative;
+      background: #18181D;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-card);
+      padding: 1.25rem;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .categoria-card:hover {
+      border-color: rgba(255, 107, 26, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .categoria-bg-placeholder {
+      position: absolute;
+      inset: 0;
+      background: #202025;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #383842;
+    }
+
+    .categoria-name {
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .categoria-name .icon {
+      color: var(--accent-orange);
+      width: 18px;
+      height: 18px;
+    }
+
+    .categoria-reforco {
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* BÔNUS */
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .bonus-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .bonus-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      border-left: 3px solid var(--accent-orange);
+    }
+
+    .bonus-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bonus-num {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .tag-gratis {
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--accent-green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      text-transform: uppercase;
+    }
+
+    .bonus-card h3 {
+      margin: 0.25rem 0 0.5rem;
+      font-size: 1.15rem;
+    }
+
+    .bonus-card p {
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .bonus-price-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-card);
+      padding-top: 0.75rem;
+    }
+
+    .bonus-price-old {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .bonus-price-now {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    .bonus-total-line {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* COMPARATIVO */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .compare-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .compare-col {
+      border-radius: var(--radius-card);
+      padding: 2rem;
+    }
+
+    .compare-col.red {
+      background: rgba(239, 68, 68, 0.04);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    .compare-col.green {
+      background: rgba(34, 197, 94, 0.04);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      box-shadow: 0 0 25px rgba(34, 197, 94, 0.08);
+    }
+
+    .compare-title {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .compare-col.red .compare-title {
+      color: var(--accent-red);
+    }
+
+    .compare-col.green .compare-title {
+      color: var(--accent-green);
+    }
+
+    .compare-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .compare-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .compare-col.red .compare-list li {
+      color: #D1D1D6;
+    }
+
+    .compare-col.red .icon {
+      color: var(--accent-red);
+      margin-top: 0.15rem;
+    }
+
+    .compare-col.green .compare-list li {
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    .compare-col.green .icon {
+      color: var(--accent-green);
+      margin-top: 0.15rem;
+    }
+
+    /* PREÇO / PLANOS */
+    .ancoragem-box {
+      background: rgba(255, 107, 26, 0.04);
+      border: 1px solid rgba(255, 107, 26, 0.25);
+      border-radius: var(--radius-card);
+      padding: 1.75rem;
+      max-width: 820px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+
+    .ancoragem-box p {
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .ancoragem-box p:last-child {
+      margin-bottom: 0;
+      color: var(--accent-orange);
+      font-weight: 700;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .pricing-grid {
+        grid-template-columns: 1fr 1.08fr;
+      }
+    }
+
+    .pricing-card {
+      background: #141418;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-card);
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .pricing-card.premium {
+      border: 2px solid var(--accent-orange);
+      background: #18181F;
+      box-shadow: 0 0 35px rgba(255, 107, 26, 0.22);
+    }
+
+    .badge-featured {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-orange);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(255, 107, 26, 0.4);
+    }
+
+    .pricing-header h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .pricing-feature-list {
+      list-style: none;
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .pricing-feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.95rem;
+      color: #E2E2E5;
+    }
+
+    .pricing-feature-list .icon {
+      color: var(--accent-orange);
+      margin-top: 0.15rem;
+    }
+
+    .pricing-price-box {
+      margin-top: auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-card);
+      text-align: center;
+    }
+
+    .price-old {
+      font-size: 0.95rem;
+      text-decoration: line-through;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .price-val {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--accent-orange);
+      line-height: 1.1;
+      display: block;
+    }
+
+    .price-period {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 0.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .pricing-card .btn {
+      width: 100%;
+    }
+
+    .pricing-subline {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* GARANTIA */
+    .garantia-box {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      background: rgba(34, 197, 94, 0.03);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: var(--radius-card);
+      padding: 3rem 2rem;
+    }
+
+    .selo-garantia {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.12);
+      border: 2px solid var(--accent-green);
+      margin-bottom: 1.5rem;
+      color: var(--accent-green);
+    }
+
+    .selo-garantia svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .garantia-box p {
+      font-size: 1.05rem;
+      color: #D6D6DC;
+    }
+
+    /* FAQ */
+    .faq-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    details.faq-item {
+      background: #18181D;
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    details.faq-item[open] {
+      border-color: rgba(255, 107, 26, 0.4);
+    }
+
+    summary.faq-question {
+      padding: 1.25rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      color: var(--text-main);
+    }
+
+    summary.faq-question::-webkit-details-marker {
+      display: none;
+    }
+
+    summary.faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent-orange);
+      transition: transform 0.2s ease;
+      margin-left: 1rem;
+    }
+
+    details[open] summary.faq-question::after {
+      content: '−';
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    /* FECHAMENTO */
+    .fechamento-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ps-box {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: rgba(255, 107, 26, 0.05);
+      border: 1px solid var(--accent-orange);
+      border-radius: var(--radius-card);
+      text-align: left;
+      font-size: 0.98rem;
+      color: var(--text-main);
+    }
+
+    .ps-box strong {
+      color: var(--accent-orange);
+    }
+
+    /* RODAPÉ */
+    footer {
+      background: #09090B;
+      border-top: 1px solid var(--border-card);
+      padding: 3rem 0;
+      text-align: center;
+      font-size: 0.88rem;
+      color: #71717A;
+    }
+
+    footer h4 {
+      font-size: 1.1rem;
+      color: var(--text-main);
+      margin-bottom: 0.35rem;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--accent-orange);
+    }
+
+    /* STICKY BOTTOM BAR (MOBILE ONLY) */
+    .mobile-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #141418;
+      border-top: 1px solid var(--border-card);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      z-index: 999;
+      transform: translateY(110%);
+      transition: transform 0.3s ease;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
+    }
+
+    .mobile-sticky-bar.visible {
+      transform: translateY(0);
+    }
+
+    .sticky-price {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky-price .label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .sticky-price .value {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--accent-orange);
+      line-height: 1;
+    }
+
+    .mobile-sticky-bar .btn-sticky {
+      background-color: var(--accent-orange);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-btn);
+      letter-spacing: 0.02em;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-sticky-bar {
+        display: none !important;
+      }
+    }
+
+    /* MODAL POPUP (OFERTA ESPECIAL APENAS R$ 17,50) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(12px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      position: relative;
+      background: #141418;
+      border: 1px solid rgba(255, 107, 26, 0.5);
+      border-radius: 20px;
+      max-width: 560px;
+      width: 100%;
+      padding: 2.25rem 1.75rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 107, 26, 0.2);
+      transform: scale(0.92);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-align: center;
+    }
+
+    .modal-backdrop.active .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-card);
+      color: #A1A1AA;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(239, 68, 68, 0.2);
+      color: #EF4444;
+    }
+
+    .modal-tag {
+      display: inline-block;
+      background: rgba(255, 107, 26, 0.15);
+      color: var(--accent-orange);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 107, 26, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.85rem;
+    }
+
+    .modal-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+    }
+
+    .modal-title u {
+      text-decoration-color: var(--accent-orange);
+    }
+
+    .modal-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-box-offer {
+      background: #1C1C22;
+      border: 1px dashed rgba(255, 107, 26, 0.4);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .modal-price-display {
+      text-align: center;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-card);
+    }
+
+    .modal-price-old {
+      font-size: 0.9rem;
+      text-decoration: line-through;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .modal-price-now {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--accent-green);
+      line-height: 1.1;
+      display: block;
+      margin: 0.2rem 0;
+    }
+
+    .modal-price-period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .modal-features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      align-items: center;
+    }
+
+    .modal-btn-upgrade {
+      width: 100%;
+      font-size: 1.05rem;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 6px 20px rgba(255, 107, 26, 0.4);
+    }
+
+    .modal-btn-basic {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+
+    .modal-btn-basic:hover {
+      color: var(--text-main);
+    }
+
+    /* FADE-UP INTERSECTION ANIMATION */
+    .fade-up-element {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .fade-up-element.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1059217000255158&ev=PageView&noscript=1"/></noscript>
+
+  <!-- BARRA SUPERIOR DE AVISO -->
+  <div class="top-bar">
+    Para quem já tem impressora 3D e está cansado de baixar arquivo quebrado
+  </div>
+
+  <!-- SEÇÃO 1: HERO -->
+  <section class="hero-section" id="hero">
+    <!-- IMAGEM DE FUNDO ATRÁS DA HEADLINE (COM SOMBRA PRETA ESCURA SOBREPOSTA) -->
+    <img src="mascaras%203d.png" alt="Fundo Máscara 3D" class="hero-bg-image" loading="eager">
+    <div class="hero-bg-overlay"></div>
+
+    <div class="container fade-up-element">
+      <!-- LOGO MARCA DA PÁGINA -->
+      <div class="brand-header">
+        <img src="MPSTL-Logo.webp" alt="Mega Pack STL Logo" class="brand-logo" loading="eager">
+      </div>
+
+      <span class="pre-headline">Acervo Infinito de Impressão 3D</span>
+      <h1 class="hero-title">+90.000 arquivos STL testados, organizados por categoria e prontos para fatiar hoje</h1>
+      <p class="hero-sub">Chega de garimpar em site aleatório, baixar um modelo que falha na metade da impressão e jogar filamento fora. Aqui você abre a pasta, escolhe o tema, baixa e imprime.</p>
+
+      <!-- GIF / VÍDEO DEMO HERO -->
+      <div class="hero-media-wrap">
+        <img src="megapack2%20(online-video-cutter.com).gif" alt="Demonstração do Mega Pack STL" class="hero-gif-media" loading="eager">
+      </div>
+
+      <ul class="hero-bullets">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Arquivos testados e fatiáveis, sem erro de malha
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          Tudo separado em pastas por nicho e por tema
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          Acesso vitalício, sem mensalidade
+        </li>
+      </ul>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">QUERO ACESSO IMEDIATO AOS +90 MIL ARQUIVOS</a>
+        <p class="micro-copy">Download na hora • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+
+      <div class="social-proof-bar">
+        <span>⭐ 4,98 — +2.400 compradores satisfeitos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="container fade-up-element">
+      <h2>Quem já está imprimindo com o pack</h2>
+      <p class="section-desc">Prints reais de clientes, sem edição.</p>
+
+      <!-- GALERIA DE DEPOIMENTOS (9:16 ROLAGEM LATERAL) -->
+      <div class="depoimentos-gallery">
+        <div class="depoimento-img-card">
+          <img src="depoimento%2001.png" alt="Depoimento 01" loading="lazy">
+        </div>
+        <div class="depoimento-img-card">
+          <img src="Depoimento%2002.png" alt="Depoimento 02" loading="lazy">
+        </div>
+        <div class="depoimento-img-card">
+          <img src="depoimento%2003.png" alt="Depoimento 03" loading="lazy">
+        </div>
+        <div class="depoimento-img-card">
+          <img src="depoimento%2004.png" alt="Depoimento 04" loading="lazy">
+        </div>
+        <div class="depoimento-img-card">
+          <img src="depoimento%2005.png" alt="Depoimento 05" loading="lazy">
+        </div>
+        <div class="depoimento-img-card">
+          <img src="Depoimento%2006.png" alt="Depoimento 06" loading="lazy">
+        </div>
+      </div>
+
+      <p class="closing-phrase">São centenas de pessoas com a impressora rodando todo dia em vez de parada esperando um arquivo bom aparecer.</p>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">QUERO COMEÇAR A IMPRIMIR HOJE</a>
+        <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: DIAGNÓSTICO DA DOR -->
+  <section id="dor">
+    <div class="container fade-up-element">
+      <h2>Você não tem problema de impressora. Você tem problema de arquivo.</h2>
+      
+      <div class="dor-corpo">
+        <p>Se você já tem uma 3D em casa, conhece a cena: três horas procurando um modelo decente, dois downloads que não abrem, um que abre mas vem com malha furada, e no fim a impressora passa o fim de semana desligada.</p>
+        <p>O gargalo nunca é a máquina. É o acervo.<br>Enquanto você garimpa, o filamento encalha, o pedido do cliente atrasa e aquela ideia de vender impressão vira "mês que vem eu organizo isso".</p>
+      </div>
+
+      <div class="dor-grid">
+        <div class="card dor-card">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <p>Horas perdidas caçando modelo em site e grupo de Telegram</p>
+        </div>
+        <div class="card dor-card">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <p>Arquivo quebrado, escala errada, malha que o slicer recusa</p>
+        </div>
+        <div class="card dor-card">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <p>Pagar R$ 20 a R$ 60 por modelo avulso que às vezes nem presta</p>
+        </div>
+        <div class="card dor-card">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <p>Impressora parada por falta de variedade para oferecer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: A SOLUÇÃO -->
+  <section id="solucao">
+    <div class="container fade-up-element">
+      <h2>O acervo pronto que devia ter vindo junto com a sua impressora</h2>
+      
+      <div class="solucao-corpo">
+        <p>O Mega Pack STL é uma biblioteca com mais de 90 mil arquivos já testados, já organizados em pastas por categoria e prontos para entrar no seu slicer.</p>
+        <p>Você não modela nada. Não converte nada. Não fica caçando nada.</p>
+        <p>Abre a pasta do tema que o cliente pediu, escolhe o modelo, fatia e imprime.</p>
+      </div>
+
+      <div class="beneficios-grid">
+        <div class="card beneficio-card">
+          <div class="beneficio-header">
+            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <h3>Ideias que não acabam</h3>
+          </div>
+          <p>Milhares de temas e categorias para nunca mais ficar sem o que oferecer.</p>
+        </div>
+
+        <div class="card beneficio-card">
+          <div class="beneficio-header">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3>Tempo de volta no seu dia</h3>
+          </div>
+          <p>Tudo catalogado em pastas. O que levava 3 horas de busca leva 3 minutos.</p>
+        </div>
+
+        <div class="card beneficio-card">
+          <div class="beneficio-header">
+            <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <h3>Previsibilidade de venda</h3>
+          </div>
+          <p>Modelos que já giram bem em marketplace e feira, não curiosidade sem saída.</p>
+        </div>
+
+        <div class="card beneficio-card">
+          <div class="beneficio-header">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            <h3>Acesso simples e vitalício</h3>
+          </div>
+          <p>Baixe no PC, no celular ou jogue tudo num HD externo. É seu para sempre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: O QUE VOCÊ RECEBE (CATEGORIAS) -->
+  <section id="categorias">
+    <div class="container fade-up-element">
+      <h2>Um catálogo inteiro na sua mão</h2>
+      <p class="section-desc">Categorias organizadas em pastas separadas — você navega como se fosse o Explorer do seu PC.</p>
+
+      <div class="categorias-grid">
+        <!-- 1 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Animes e mangás
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Desenhos e personagens infantis
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Religião e arte sacra
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Mitologia e fantasia
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Decoração e casa
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Bustos e action figures
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Suportes, organizadores e peças funcionais
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Chaveiros, topos de bolo e lembrancinhas
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Ferramentas, gabaritos e peças de oficina
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Articulados e flexíveis
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Veículos: carros, motos, caminhões
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="categoria-card">
+          <div class="categoria-bg-placeholder">[Background]</div>
+          <div class="categoria-name">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            E muito mais
+          </div>
+        </div>
+      </div>
+
+      <p class="categoria-reforco">Cada pasta já vem com os arquivos separados por modelo. Sem ZIP dentro de ZIP dentro de ZIP.</p>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">QUERO O ACERVO COMPLETO</a>
+        <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: BÔNUS -->
+  <section id="bonus">
+    <div class="container fade-up-element">
+      <h2>Comprando hoje, entram junto 8 coleções extras</h2>
+      <p class="section-desc">Cada uma é vendida separadamente. Hoje elas entram no mesmo download.</p>
+
+      <div class="bonus-grid">
+        <!-- Bônus 1 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="carros%203d.png" alt="Pack de Veículos 3D Profissionais" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #1</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Pack de Veículos 3D Profissionais</h3>
+            <p>Carros, motos, caminhões e maquinário com nível de detalhe de vitrine.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 29,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="marvel.png" alt="Coleção Heróis e Quadrinhos" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #2</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Coleção Heróis e Quadrinhos</h3>
+            <p>Bustos e figuras de herói em vários formatos e escalas.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 39,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 3 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="utensilios%20domesticos.png" alt="Utensílios Domésticos" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #3</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Utensílios Domésticos</h3>
+            <p>Suportes, ganchos, organizadores e peças que resolvem problema real de casa — o tipo que mais vende para vizinho.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 49,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 4 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="modelos%20flexiveis.png" alt="Modelos Flexíveis e Articulados" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #4</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Modelos Flexíveis e Articulados</h3>
+            <p>Mais de 1.300 modelos com encaixe de clique, impressos já montados. Os campeões de vídeo viral.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 59,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 5 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="modelos%20classicos.png" alt="Clássicos dos Desenhos" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #5</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Clássicos dos Desenhos</h3>
+            <p>Mais de 30 personagens nostálgicos da TV. Público adulto, ticket mais alto.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 89,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 6 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="mascaras%203d.png" alt="Coleção Máscaras 3D" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #6</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Coleção Máscaras 3D</h3>
+            <p>Dezenas de máscaras detalhadas para cosplay, festa e decoração de parede.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 69,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 7 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="cole%C3%A7%C3%A3o%20pokemon.png" alt="Coleção Criaturas e Monstros" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #7</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Coleção Criaturas e Monstros</h3>
+            <p>Mais de 100 modelos colecionáveis para fãs de jogos e RPG.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 39,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+
+        <!-- Bônus 8 -->
+        <div class="card bonus-card">
+          <div>
+            <div class="bonus-card-img-wrap">
+              <img src="cole%C3%A7%C3%A3o%20star%20wars.png" alt="Coleção Ficção Científica" class="bonus-card-img" loading="lazy">
+            </div>
+            <div class="bonus-badge-row">
+              <span class="bonus-num">Bônus #8</span>
+              <span class="tag-gratis">Grátis</span>
+            </div>
+            <h3>Coleção Ficção Científica</h3>
+            <p>Naves, droides e cenários de universo espacial.</p>
+          </div>
+          <div class="bonus-price-row">
+            <span class="bonus-price-old">R$ 79,90</span>
+            <span class="bonus-price-now">Grátis</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="bonus-total-line">Somando, são R$ 479,10 em coleções. Hoje elas saem junto, sem custo nenhum.</p>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">QUERO O PACK + OS 8 BÔNUS</a>
+        <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: SEM O PACK × COM O PACK -->
+  <section id="comparativo">
+    <div class="container fade-up-element">
+      <h2>A diferença de uma semana de trabalho</h2>
+      
+      <div class="compare-grid">
+        <!-- Coluna Vermelha -->
+        <div class="compare-col red">
+          <h3 class="compare-title">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            Sem o Mega Pack STL
+          </h3>
+          <ul class="compare-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Perde horas caçando arquivo em site e grupo
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Baixa modelo quebrado, incompleto ou fora de escala
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Paga caro por cada modelo avulso
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Fica preso a três ou quatro projetos repetidos
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Corre risco de baixar arquivo malicioso
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Recusa pedido de cliente por não ter o modelo
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna Verde -->
+        <div class="compare-col green">
+          <h3 class="compare-title">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Com o Mega Pack STL
+          </h3>
+          <ul class="compare-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Mais de 90 mil modelos organizados, acesso imediato
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Arquivos testados, compatíveis e fatiáveis
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Pagamento único, sem mensalidade e sem taxa extra
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Variedade para atender qualquer pedido que aparecer
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Download em ambiente único e seguro
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Cliente pede, você já tem
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">QUERO ESTAR DO LADO VERDE</a>
+        <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8: ANCORAGEM DE VALOR + PACOTES -->
+  <section id="checkout">
+    <div class="container fade-up-element">
+      <h2>Quanto custa cada arquivo no fim das contas</h2>
+
+      <!-- Bloco de Ancoragem -->
+      <div class="ancoragem-box">
+        <p>Um único modelo STL de qualidade custa entre R$ 15 e R$ 60 avulso.</p>
+        <p>Comprando 90 mil modelos por fora, ao menor preço possível, você gastaria mais de R$ 1.350.000.</p>
+        <p>No Mega Pack, os mesmos 90 mil arquivos + 8 coleções bônus saem por menos de R$ 0,001 por arquivo.</p>
+        <p>Uma peça impressa vendida por R$ 30 já paga o pack inteiro — com troco.</p>
+      </div>
+
+      <h2 style="font-size: 1.6rem; margin-bottom: 2rem;">Escolha seu acesso</h2>
+
+      <div class="pricing-grid">
+        <!-- PACOTE BÁSICO -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>PACOTE BÁSICO</h3>
+          </div>
+          <ul class="pricing-feature-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Pack com +90.000 arquivos STL
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Acesso vitalício
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 1: Veículos 3D Profissionais
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 2: Heróis e Quadrinhos
+            </li>
+          </ul>
+          <div class="pricing-price-box">
+            <span class="price-old">De R$ 189,90</span>
+            <span class="price-val">R$ 9,90</span>
+            <span class="price-period">— pagamento único</span>
+            <a href="https://lastlink.com/p/CFA2FE4F2/checkout-payment/" class="btn btn-basic-plan">QUERO O BÁSICO</a>
+          </div>
+        </div>
+
+        <!-- PACOTE PREMIUM -->
+        <div class="pricing-card premium">
+          <div class="badge-featured">MAIS VENDIDO ⭐ 4,98</div>
+          <div class="pricing-header">
+            <h3>PACOTE PREMIUM</h3>
+          </div>
+          <ul class="pricing-feature-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Pack com +90.000 arquivos STL
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Acesso vitalício
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 1: Veículos 3D Profissionais
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 2: Heróis e Quadrinhos
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 3: Utensílios Domésticos
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 4: Modelos Flexíveis e Articulados
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 5: Clássicos dos Desenhos
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 6: Máscaras 3D
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 7: Criaturas e Monstros
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bônus 8: Ficção Científica
+            </li>
+          </ul>
+          <div class="pricing-price-box">
+            <span class="price-old">De R$ 489,90</span>
+            <span class="price-val">R$ 27,90</span>
+            <span class="price-period">— pagamento único</span>
+            <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn" target="_blank" rel="noopener">QUERO ESSA SUPER OFERTA</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="pricing-subline">A diferença entre os dois é R$ 18 — e 6 coleções inteiras.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: GARANTIA -->
+  <section id="garantia">
+    <div class="container fade-up-element">
+      <div class="garantia-box">
+        <div class="selo-garantia">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <polyline points="9 12 11 14 15 10"></polyline>
+          </svg>
+        </div>
+        <h2>14 dias para testar. Se não gostar, eu devolvo.</h2>
+        <p>Baixe tudo, abra as pastas, fatie, imprima, venda. Se em 14 dias você achar que não valeu, manda uma mensagem e o valor volta integral. Sem formulário, sem justificativa, sem enrolação.</p>
+        <p style="font-weight: 600; color: #FFFFFF; margin-top: 0.75rem;">O risco é meu. Seu, no máximo, é o tempo de um download.</p>
+        
+        <div class="btn-wrap">
+          <a href="#checkout" class="btn">COMPRAR COM GARANTIA DE 14 DIAS</a>
+          <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10: FAQ -->
+  <section id="faq">
+    <div class="container fade-up-element">
+      <h2>Perguntas Frequentes</h2>
+      <p class="section-desc">Tire todas as suas dúvidas antes de baixar seu acervo.</p>
+
+      <div class="faq-wrap">
+        <!-- 1 -->
+        <details class="faq-item">
+          <summary class="faq-question">Esses arquivos funcionam na minha impressora?</summary>
+          <div class="faq-answer">
+            Sim. São arquivos STL, o formato padrão de qualquer impressora FDM ou resina. Funciona em Creality, Elegoo, Anycubic, Bambu, Flashforge e qualquer outra que use slicer como Cura, PrusaSlicer, Orca ou Chitubox.
+          </div>
+        </details>
+
+        <!-- 2 -->
+        <details class="faq-item">
+          <summary class="faq-question">Como acesso os arquivos depois de pagar?</summary>
+          <div class="faq-answer">
+            O link de acesso chega no seu e-mail em segundos, assim que o pagamento é aprovado. É uma área com as pastas organizadas, aberta 24h.
+          </div>
+        </details>
+
+        <!-- 3 -->
+        <details class="faq-item">
+          <summary class="faq-question">Os arquivos estão organizados mesmo?</summary>
+          <div class="faq-answer">
+            Sim, em pastas por categoria e por tema. Você entra, escolhe o nicho e baixa só o que vai usar.
+          </div>
+        </details>
+
+        <!-- 4 -->
+        <details class="faq-item">
+          <summary class="faq-question">Preciso baixar tudo de uma vez?</summary>
+          <div class="faq-answer">
+            Não. Baixe por pasta, no seu ritmo. O acesso é vitalício, então dá para voltar quantas vezes quiser.
+          </div>
+        </details>
+
+        <!-- 5 -->
+        <details class="faq-item">
+          <summary class="faq-question">Preciso saber modelar em 3D?</summary>
+          <div class="faq-answer">
+            Não. Os modelos já estão prontos. Seu trabalho é só fatiar e imprimir.
+          </div>
+        </details>
+
+        <!-- 6 -->
+        <details class="faq-item">
+          <summary class="faq-question">Posso vender as peças que eu imprimir?</summary>
+          <div class="faq-answer">
+            Pode vender as impressões dos modelos de uso livre e comercial, que são a maior parte do acervo. Modelos baseados em personagens de marcas registradas devem ser usados para fins pessoais — a mesma regra vale para qualquer arquivo que você baixe em qualquer lugar. Se a sua intenção é montar uma operação de venda, priorize as pastas de peças funcionais, decoração, utilidades e articulados: são as que mais giram e não têm essa limitação.
+          </div>
+        </details>
+
+        <!-- 7 -->
+        <details class="faq-item">
+          <summary class="faq-question">Vale a pena pagar se existe modelo grátis por aí?</summary>
+          <div class="faq-answer">
+            Existe, e você já sabe quanto tempo leva para achar um bom. O que você paga aqui não é o arquivo — é a curadoria, a organização e as horas que você deixa de perder.
+          </div>
+        </details>
+
+        <!-- 8 -->
+        <details class="faq-item">
+          <summary class="faq-question">Recebo o acesso na hora?</summary>
+          <div class="faq-answer">
+            Sim. Aprovação automática por Pix ou cartão, entrega imediata.
+          </div>
+        </details>
+
+        <!-- 9 -->
+        <details class="faq-item">
+          <summary class="faq-question">Funciona para quem é iniciante?</summary>
+          <div class="faq-answer">
+            Especialmente para iniciante. Você pula a parte mais difícil do começo, que é descobrir o que imprimir e onde achar arquivo confiável.
+          </div>
+        </details>
+      </div>
+
+      <div class="btn-wrap">
+        <a href="#checkout" class="btn">BAIXAR O PACOTE AGORA</a>
+        <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 11: FECHAMENTO -->
+  <section id="fechamento">
+    <div class="container fade-up-element">
+      <div class="fechamento-wrap">
+        <h2>Sua impressora não está parada por falta de vontade</h2>
+        <p style="font-size: 1.1rem; color: #D6D6DC;">Está parada por falta de arquivo bom. Isso se resolve hoje, em um download, por menos do que custa um rolo de filamento.</p>
+        <p style="font-size: 1.1rem; color: #D6D6DC;">Daqui a um mês você vai estar com 90 mil modelos na mão ou ainda vai estar com 14 abas abertas procurando um busto decente.</p>
+
+        <div class="btn-wrap">
+          <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn" target="_blank" rel="noopener">QUERO MEU ACESSO AGORA — R$ 27,90</a>
+          <p class="micro-copy">Pagamento único • Acesso vitalício • 14 dias de garantia incondicional</p>
+        </div>
+
+        <div class="ps-box">
+          <strong>P.S. —</strong> Os 8 bônus (R$ 479,10 em coleções) entram automaticamente no Pacote Premium. Se você fechar pelo básico, leva 2 dos 8.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 12: RODAPÉ -->
+  <footer>
+    <div class="container">
+      <h4>Mega Pack STL</h4>
+      <p style="margin-bottom: 0.75rem;">Mais de 90.000 arquivos STL organizados e testados para impressão 3D.</p>
+      <p>
+        <a href="#checkout">Termos de Uso</a> • 
+        <a href="#checkout">Política de Privacidade</a>
+      </p>
+      <p style="font-size: 0.8rem; margin-top: 1rem; color: #52525B;">© 2026 Mega Pack STL. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DE OFERTA ESPECIAL (UPSELL PLANO COMPLETO POR R$ 17,50) -->
+  <div id="modal-upsell" class="modal-backdrop">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close-btn" aria-label="Fechar">&times;</button>
+      
+      <span class="modal-tag">⚡ OFERTA EXCLUSIVA DE UPGRADE</span>
+      <h2 class="modal-title">ESPERE! Leve o <u>PLANO COMPLETO</u> por apenas <strong>R$ 17,50</strong>!</h2>
+      <p class="modal-sub">Não perca 6 coleções inteiras bônus por uma diferença de apenas alguns centavos!</p>
+
+      <div class="modal-box-offer">
+        <div class="modal-price-display">
+          <span class="modal-price-old">De R$ 27,90</span>
+          <span class="modal-price-now">Por apenas R$ 17,50</span>
+          <span class="modal-price-period">pagamento único • acesso vitalício</span>
+        </div>
+
+        <ul class="modal-features-list">
+          <li>🔥 <strong>+90.000 Arquivos STL Prontos e Testados</strong></li>
+          <li>🎁 <strong>TODAS AS 8 COLEÇÕES BÔNUS INCLUSAS</strong> (Veículos, Heróis, Utensílios, Flexíveis, Máscaras, Desenhos, Pokémon e Star Wars)</li>
+          <li>⚡ Acesso Vitalício sem Mensalidades</li>
+          <li>🛡️ Garantia incondicional de 14 dias</li>
+        </ul>
+      </div>
+
+      <div class="modal-actions">
+        <a href="https://lastlink.com/p/CFA327856/checkout-payment/" class="btn modal-btn-upgrade" target="_blank" rel="noopener">
+          🔥 SIM! QUERO O PLANO COMPLETO POR APENAS R$ 17,50
+        </a>
+        <a href="https://lastlink.com/p/CFA2FE4F2/checkout-payment/" class="modal-btn-basic" target="_blank" rel="noopener">
+          Não, obrigado. Quero continuar com o Plano Básico de R$ 9,90 &rsaquo;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA FIXA MOBILE -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="sticky-price">
+      <span class="label">Mega Pack Premium</span>
+      <span class="value">R$ 27,90</span>
+    </div>
+    <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn-sticky" target="_blank" rel="noopener">QUERO AGORA</a>
+  </div>
+
+  <!-- JAVASCRIPT: OBSERVER & STICKY BAR & MODAL -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Fade-up animation via IntersectionObserver
+      const fadeElements = document.querySelectorAll('.fade-up-element');
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      };
+
+      const fadeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      fadeElements.forEach(el => fadeObserver.observe(el));
+
+      // Mobile Sticky Bar trigger after Hero
+      const hero = document.getElementById('hero');
+      const stickyBar = document.getElementById('mobileStickyBar');
+
+      if (hero && stickyBar) {
+        const stickyObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              stickyBar.classList.add('visible');
+            } else {
+              stickyBar.classList.remove('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        stickyObserver.observe(hero);
+      }
+
+      // Modal Special Offer Trigger for Basic Plan
+      const modal = document.getElementById('modal-upsell');
+      const closeBtn = document.getElementById('modal-close');
+      const basicBtns = document.querySelectorAll('.btn-basic-plan');
+
+      basicBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (modal) modal.classList.add('active');
+          if (window.fbq) {
+            fbq('trackCustom', 'BasicModalTriggered', {
+              content_name: 'Pop-up Oferta Especial R$ 17,50 Exibido'
+            });
+          }
+        });
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('active');
+        });
+      }
+
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      }
+
+      // META PIXEL ENHANCED TRACKING
+
+      // 1. ViewContent when user reaches Checkout/Pricing section
+      const checkoutSection = document.getElementById('checkout');
+      if (checkoutSection) {
+        const checkoutObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              if (window.fbq) {
+                fbq('track', 'ViewContent', {
+                  content_name: 'Tabela de Ofertas - Mega Pack STL',
+                  content_category: 'Impressão 3D',
+                  value: 27.90,
+                  currency: 'BRL'
+                });
+              }
+              checkoutObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        checkoutObserver.observe(checkoutSection);
+      }
+
+      // 2. InitiateCheckout Event Tracking on Link Clicks
+      document.querySelectorAll('a[href*="lastlink.com"]').forEach(link => {
+        link.addEventListener('click', () => {
+          const href = link.getAttribute('href') || '';
+          let planName = 'Mega Pack STL - Geral';
+          let planValue = 27.90;
+          let planId = 'plano-geral-2790';
+
+          if (href.includes('CFA2FE4F2')) {
+            planName = 'Mega Pack STL - Plano Básico R$ 9,90';
+            planValue = 9.90;
+            planId = 'plano-basico-990';
+          } else if (href.includes('CFA327856')) {
+            planName = 'Mega Pack STL - Plano Oferta Especial Upgrade R$ 17,50';
+            planValue = 17.50;
+            planId = 'plano-upgrade-1750';
+          } else if (href.includes('C36917457')) {
+            planName = 'Mega Pack STL - Plano Premium Completo R$ 27,90';
+            planValue = 27.90;
+            planId = 'plano-premium-2790';
+          }
+
+          if (window.fbq) {
+            fbq('track', 'InitiateCheckout', {
+              content_name: planName,
+              content_category: 'Impressão 3D',
+              content_ids: [planId],
+              value: planValue,
+              currency: 'BRL'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+</body></html>
