@@ -500,70 +500,50 @@
       font-size: 0.95rem;
     }
 
-    /* CATEGORIAS */
-    .categorias-grid {
+    /* CATEGORIAS (FORMATO LISTA SELETA) */
+    .categorias-list {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    @media (min-width: 768px) {
-      .categorias-grid {
-        grid-template-columns: repeat(3, 1fr);
+    @media (min-width: 640px) {
+      .categorias-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
       }
     }
 
-    @media (min-width: 1024px) {
-      .categorias-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .categoria-card {
-      position: relative;
-      background: #18181D;
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-card);
-      padding: 1.25rem;
-      min-height: 120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      overflow: hidden;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .categoria-card:hover {
-      border-color: rgba(255, 107, 26, 0.4);
-      transform: translateY(-2px);
-    }
-
-    .categoria-bg-placeholder {
-      position: absolute;
-      inset: 0;
-      background: #202025;
-      opacity: 0.6;
+    .categoria-item {
       display: flex;
       align-items: center;
-      justify-content: center;
-      color: #383842;
+      gap: 0.85rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      transition: all 0.2s ease;
     }
 
-    .categoria-name {
-      position: relative;
-      z-index: 1;
-      font-weight: 700;
+    .categoria-item:hover {
+      background: rgba(255, 107, 26, 0.08);
+      border-color: rgba(255, 107, 26, 0.4);
+      transform: translateX(4px);
+    }
+
+    .categoria-item .icon {
+      color: var(--accent-orange);
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .categoria-item span {
+      font-weight: 600;
       font-size: 1rem;
       color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .categoria-name .icon {
-      color: var(--accent-orange);
-      width: 18px;
-      height: 18px;
     }
 
     .categoria-reforco {
@@ -1375,113 +1355,77 @@
       <h2>Um catálogo inteiro na sua mão</h2>
       <p class="section-desc">Categorias organizadas em pastas separadas — você navega como se fosse o Explorer do seu PC.</p>
 
-      <div class="categorias-grid">
+      <div class="categorias-list">
         <!-- 1 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Animes e mangás
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Animes e mangás</span>
         </div>
 
         <!-- 2 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Desenhos e personagens infantis
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Desenhos e personagens infantis</span>
         </div>
 
         <!-- 3 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Religião e arte sacra
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Religião e arte sacra</span>
         </div>
 
         <!-- 4 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Mitologia e fantasia
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Mitologia e fantasia</span>
         </div>
 
         <!-- 5 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Decoração e casa
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Decoração e casa</span>
         </div>
 
         <!-- 6 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Bustos e action figures
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Bustos e action figures</span>
         </div>
 
         <!-- 7 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Suportes, organizadores e peças funcionais
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Suportes, organizadores e peças funcionais</span>
         </div>
 
         <!-- 8 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Chaveiros, topos de bolo e lembrancinhas
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Chaveiros, topos de bolo e lembrancinhas</span>
         </div>
 
         <!-- 9 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Ferramentas, gabaritos e peças de oficina
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Ferramentas, gabaritos e peças de oficina</span>
         </div>
 
         <!-- 10 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Articulados e flexíveis
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Articulados e flexíveis</span>
         </div>
 
         <!-- 11 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            Veículos: carros, motos, caminhões
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>Veículos: carros, motos, caminhões</span>
         </div>
 
         <!-- 12 -->
-        <div class="categoria-card">
-          <div class="categoria-bg-placeholder">[Background]</div>
-          <div class="categoria-name">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            E muito mais
-          </div>
+        <div class="categoria-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span>E muito mais...</span>
         </div>
       </div>
 
