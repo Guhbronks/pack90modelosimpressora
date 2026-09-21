@@ -56,13 +56,6 @@
       line-height: 1.6;
       font-weight: 400;
       overflow-x: hidden;
-      padding-bottom: 70px; /* Space for mobile sticky bottom bar */
-    }
-
-    @media (min-width: 768px) {
-      body {
-        padding-bottom: 0;
-      }
     }
 
     /* TYPOGRAPHY */
@@ -1021,65 +1014,6 @@
 
     footer a:hover {
       color: var(--accent-orange);
-    }
-
-    /* STICKY BOTTOM BAR (MOBILE ONLY) */
-    .mobile-sticky-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #141418;
-      border-top: 1px solid var(--border-card);
-      padding: 0.75rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      z-index: 999;
-      transform: translateY(110%);
-      transition: transform 0.3s ease;
-      box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
-    }
-
-    .mobile-sticky-bar.visible {
-      transform: translateY(0);
-    }
-
-    .sticky-price {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sticky-price .label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .sticky-price .value {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--accent-orange);
-      line-height: 1;
-    }
-
-    .mobile-sticky-bar .btn-sticky {
-      background-color: var(--accent-orange);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 0.95rem;
-      padding: 0.75rem 1.25rem;
-      border-radius: var(--radius-btn);
-      letter-spacing: 0.02em;
-    }
-
-    @media (min-width: 768px) {
-      .mobile-sticky-bar {
-        display: none !important;
-      }
     }
 
     /* MODAL POPUP (OFERTA ESPECIAL APENAS R$ 17,50) */
@@ -2096,15 +2030,6 @@
     </div>
   </div>
 
-  <!-- BARRA FIXA MOBILE -->
-  <div class="mobile-sticky-bar" id="mobileStickyBar">
-    <div class="sticky-price">
-      <span class="label">Mega Pack Premium</span>
-      <span class="value">R$ 27,90</span>
-    </div>
-    <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn-sticky" target="_blank" rel="noopener">QUERO AGORA</a>
-  </div>
-
   <!-- JAVASCRIPT: OBSERVER & STICKY BAR & MODAL -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -2125,24 +2050,6 @@
       }, observerOptions);
 
       fadeElements.forEach(el => fadeObserver.observe(el));
-
-      // Mobile Sticky Bar trigger after Hero
-      const hero = document.getElementById('hero');
-      const stickyBar = document.getElementById('mobileStickyBar');
-
-      if (hero && stickyBar) {
-        const stickyObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-              stickyBar.classList.add('visible');
-            } else {
-              stickyBar.classList.remove('visible');
-            }
-          });
-        }, { threshold: 0.1 });
-
-        stickyObserver.observe(hero);
-      }
 
       // Modal Special Offer Trigger for Basic Plan
       const modal = document.getElementById('modal-upsell');
