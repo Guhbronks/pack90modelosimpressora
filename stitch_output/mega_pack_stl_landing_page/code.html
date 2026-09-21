@@ -1876,6 +1876,9 @@
               <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
               Acesso vitalício
             </li>
+            <li style="color: #22C55E; font-weight: 700;">
+              🎄 <strong>BÔNUS DE NATAL:</strong> Pack Enfeites & Lembrancinhas 3D
+            </li>
             <li>
               <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
               Bônus 1: Veículos 3D Profissionais
@@ -1900,6 +1903,9 @@
             <h3>PACOTE PREMIUM</h3>
           </div>
           <ul class="pricing-feature-list">
+            <li style="color: #22C55E; font-weight: 700;">
+              🎄 <strong>BÔNUS EXCLUSIVO DE NATAL:</strong> Enfeites, Presépios & Decoração Natalina 3D!
+            </li>
             <li>
               <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
               Pack com +90.000 arquivos STL
@@ -1945,7 +1951,7 @@
             <span class="price-old">De R$ 489,90</span>
             <span class="price-val">R$ 27,90</span>
             <span class="price-period">— pagamento único</span>
-            <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn" target="_blank" rel="noopener">QUERO ESSA SUPER OFERTA</a>
+            <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn btn-premium-plan">QUERO ESSA SUPER OFERTA</a>
           </div>
         </div>
       </div>
@@ -2153,18 +2159,18 @@
 
       fadeElements.forEach(el => fadeObserver.observe(el));
 
-      // Modal Special Offer Trigger for Basic Plan
+      // Modal Special Offer Trigger for both Basic and Premium Plans
       const modal = document.getElementById('modal-upsell');
       const closeBtn = document.getElementById('modal-close');
-      const basicBtns = document.querySelectorAll('.btn-basic-plan');
+      const checkoutBtns = document.querySelectorAll('.btn-basic-plan, .btn-premium-plan');
 
-      basicBtns.forEach(btn => {
+      checkoutBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
           if (modal) modal.classList.add('active');
           if (window.fbq) {
-            fbq('trackCustom', 'BasicModalTriggered', {
-              content_name: 'Pop-up Oferta Especial R$ 17,50 Exibido'
+            fbq('trackCustom', 'ChristmasModalTriggered', {
+              content_name: 'Pop-up Oferta Especial Natal R$ 17,50 Exibido'
             });
           }
         });
