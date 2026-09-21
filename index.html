@@ -1951,7 +1951,7 @@
             <span class="price-old">De R$ 489,90</span>
             <span class="price-val">R$ 27,90</span>
             <span class="price-period">— pagamento único</span>
-            <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn btn-premium-plan">QUERO ESSA SUPER OFERTA</a>
+            <a href="https://lastlink.com/p/C36917457/checkout-payment/" class="btn btn-premium-plan" target="_blank" rel="noopener">QUERO ESSA SUPER OFERTA</a>
           </div>
         </div>
       </div>
@@ -2159,18 +2159,18 @@
 
       fadeElements.forEach(el => fadeObserver.observe(el));
 
-      // Modal Special Offer Trigger for both Basic and Premium Plans
+      // Modal Special Offer Trigger for Basic Plan ONLY (Completo button goes straight to checkout)
       const modal = document.getElementById('modal-upsell');
       const closeBtn = document.getElementById('modal-close');
-      const checkoutBtns = document.querySelectorAll('.btn-basic-plan, .btn-premium-plan');
+      const basicBtns = document.querySelectorAll('.btn-basic-plan');
 
-      checkoutBtns.forEach(btn => {
+      basicBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
           if (modal) modal.classList.add('active');
           if (window.fbq) {
-            fbq('trackCustom', 'ChristmasModalTriggered', {
-              content_name: 'Pop-up Oferta Especial Natal R$ 17,50 Exibido'
+            fbq('trackCustom', 'BasicModalTriggered', {
+              content_name: 'Pop-up Oferta Especial R$ 17,50 Exibido'
             });
           }
         });
