@@ -4,7 +4,11 @@
   <title>Mega Pack STL — +90.000 Arquivos STL Prontos para Impressão 3D</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="mascaras_3d.webp" type="image/webp">
+  <link rel="preload" as="image" href="MPSTL-Logo.webp" type="image/webp">
+  <link rel="preload" as="image" href="megapack_demo.webp" type="image/webp">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/fonts.css" rel="stylesheet">
   <!-- Meta Pixel Code -->
   <script>
@@ -108,6 +112,11 @@
 
     section {
       padding: 4.5rem 0;
+    }
+
+    section:not(#hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: 600px;
     }
 
     section:nth-of-type(even) {
@@ -1259,13 +1268,13 @@
   <!-- SEÇÃO 1: HERO -->
   <section class="hero-section" id="hero">
     <!-- IMAGEM DE FUNDO ATRÁS DA HEADLINE (COM SOMBRA PRETA ESCURA SOBREPOSTA) -->
-    <img src="mascaras%203d.png" alt="Fundo Máscara 3D" class="hero-bg-image" loading="eager">
+    <img src="mascaras_3d.webp" alt="Fundo Máscara 3D" class="hero-bg-image" width="1000" height="600" fetchpriority="high" decoding="async">
     <div class="hero-bg-overlay"></div>
 
     <div class="container fade-up-element">
       <!-- LOGO MARCA DA PÁGINA -->
       <div class="brand-header">
-        <img src="MPSTL-Logo.webp" alt="Mega Pack STL Logo" class="brand-logo" loading="eager">
+        <img src="MPSTL-Logo.webp" alt="Mega Pack STL Logo" class="brand-logo" width="200" height="85" fetchpriority="high" decoding="async">
       </div>
 
       <span class="pre-headline">Acervo Infinito de Impressão 3D</span>
@@ -1274,7 +1283,7 @@
 
       <!-- GIF / VÍDEO DEMO HERO -->
       <div class="hero-media-wrap">
-        <img src="megapack2%20(online-video-cutter.com).gif" alt="Demonstração do Mega Pack STL" class="hero-gif-media" loading="eager">
+        <img src="megapack_demo.webp" alt="Demonstração do Mega Pack STL" class="hero-gif-media" width="640" height="360" fetchpriority="high" decoding="async">
       </div>
 
       <ul class="hero-bullets">
@@ -1312,22 +1321,22 @@
       <!-- GALERIA DE DEPOIMENTOS (9:16 ROLAGEM LATERAL) -->
       <div class="depoimentos-gallery">
         <div class="depoimento-img-card">
-          <img src="depoimento%2001.png" alt="Depoimento 01" loading="lazy">
+          <img src="depoimento_01.webp" alt="Depoimento 01" width="450" height="800" loading="lazy" decoding="async">
         </div>
         <div class="depoimento-img-card">
-          <img src="Depoimento%2002.png" alt="Depoimento 02" loading="lazy">
+          <img src="depoimento_02.webp" alt="Depoimento 02" width="450" height="800" loading="lazy" decoding="async">
         </div>
         <div class="depoimento-img-card">
-          <img src="depoimento%2003.png" alt="Depoimento 03" loading="lazy">
+          <img src="depoimento_03.webp" alt="Depoimento 03" width="450" height="800" loading="lazy" decoding="async">
         </div>
         <div class="depoimento-img-card">
-          <img src="depoimento%2004.png" alt="Depoimento 04" loading="lazy">
+          <img src="depoimento_04.webp" alt="Depoimento 04" width="450" height="800" loading="lazy" decoding="async">
         </div>
         <div class="depoimento-img-card">
-          <img src="depoimento%2005.png" alt="Depoimento 05" loading="lazy">
+          <img src="depoimento_05.webp" alt="Depoimento 05" width="450" height="800" loading="lazy" decoding="async">
         </div>
         <div class="depoimento-img-card">
-          <img src="Depoimento%2006.png" alt="Depoimento 06" loading="lazy">
+          <img src="depoimento_06.webp" alt="Depoimento 06" width="450" height="800" loading="lazy" decoding="async">
         </div>
       </div>
 
@@ -1518,7 +1527,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="carros%203d.png" alt="Pack de Veículos 3D Profissionais" class="bonus-card-img" loading="lazy">
+              <img src="carros_3d.webp" alt="Pack de Veículos 3D Profissionais" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #1</span>
@@ -1537,7 +1546,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="marvel.png" alt="Coleção Heróis e Quadrinhos" class="bonus-card-img" loading="lazy">
+              <img src="marvel.webp" alt="Coleção Heróis e Quadrinhos" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #2</span>
@@ -1556,7 +1565,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="utensilios%20domesticos.png" alt="Utensílios Domésticos" class="bonus-card-img" loading="lazy">
+              <img src="utensilios_domesticos.webp" alt="Utensílios Domésticos" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #3</span>
@@ -1575,7 +1584,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="modelos%20flexiveis.png" alt="Modelos Flexíveis e Articulados" class="bonus-card-img" loading="lazy">
+              <img src="modelos_flexiveis.webp" alt="Modelos Flexíveis e Articulados" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #4</span>
@@ -1594,7 +1603,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="modelos%20classicos.png" alt="Clássicos dos Desenhos" class="bonus-card-img" loading="lazy">
+              <img src="modelos_classicos.webp" alt="Clássicos dos Desenhos" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #5</span>
@@ -1613,7 +1622,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="mascaras%203d.png" alt="Coleção Máscaras 3D" class="bonus-card-img" loading="lazy">
+              <img src="mascaras_3d.webp" alt="Coleção Máscaras 3D" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #6</span>
@@ -1632,7 +1641,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="cole%C3%A7%C3%A3o%20pokemon.png" alt="Coleção Criaturas e Monstros" class="bonus-card-img" loading="lazy">
+              <img src="colecao_pokemon.webp" alt="Coleção Criaturas e Monstros" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #7</span>
@@ -1651,7 +1660,7 @@
         <div class="card bonus-card">
           <div>
             <div class="bonus-card-img-wrap">
-              <img src="cole%C3%A7%C3%A3o%20star%20wars.png" alt="Coleção Ficção Científica" class="bonus-card-img" loading="lazy">
+              <img src="colecao_star_wars.webp" alt="Coleção Ficção Científica" class="bonus-card-img" width="640" height="360" loading="lazy" decoding="async">
             </div>
             <div class="bonus-badge-row">
               <span class="bonus-num">Bônus #8</span>
